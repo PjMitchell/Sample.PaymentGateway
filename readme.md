@@ -1,9 +1,9 @@
-##Payment Gateway
+## Payment Gateway
 This is a simple payment gateway that converses with a Bank then returns the result
 Success and failure are published on an event bus, currently using RabbitMq.
 There is an event listener ran as a hosted service that will pick up the messages and store them for inspection. There is some sanitation of the message being stored.
 
-###Setup
+### Setup
 App uses MongoDb and RabbitMq can setup as following
 
 > docker pull mongo
